@@ -1,7 +1,7 @@
 // GET METHOD
 const postsDiv = document.getElementById('posts');
-const loadPosts = async (id) => {
-  const url = `https://jsonplaceholder.typicode.com/prosts/${id}`;
+const loadPosts = async () => {
+  const url = `https://jsonplaceholder.typicode.com/posts`;
   try {
     const response = await fetch(url);
     const data = await response.json();
